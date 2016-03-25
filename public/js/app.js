@@ -5,6 +5,7 @@ angular.module('learnNg')
       .directive('navBar', function(){
         return {
           templateUrl: 'html/templates/nav.html',
+          controller: 'NavController'
         };
       });
 
@@ -12,7 +13,8 @@ angular.module('learnNg')
       .config(function($routeProvider){
         $routeProvider
         .when('/', {
-          templateUrl: 'html/views/home.html'
+          templateUrl: 'html/views/home.html',
+          controller: 'HomeController'
         })
         .when('/about',{
           templateUrl: 'html/views/about.html'
